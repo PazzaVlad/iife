@@ -1,10 +1,14 @@
 {
   "name": "iife",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple unility functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PazzaVlad/iife.git"
   },
   "keywords": [
     "iife",
