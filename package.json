@@ -1,20 +1,32 @@
 {
-  "name": "iife",
-  "version": "1.0.1",
-  "description": "Simple unility functions",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PazzaVlad/iife.git"
-  },
-  "keywords": [
-    "iife",
-    "try",
-    "exceptions"
-  ],
-  "author": "Vlad Harb",
-  "license": "MIT"
+	"name": "iife",
+	"version": "1.1.0",
+	"description": "Simple utility functions",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --dts --format cjs",
+		"release": "yarn build && yarn npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PazzaVlad/iife.git"
+	},
+	"keywords": [
+		"iife",
+		"try",
+		"exceptions"
+	],
+	"files": [
+		"package.json",
+		"README.md",
+		"dist"
+	],
+	"author": "Vlad Harb",
+	"license": "MIT",
+	"devDependencies": {
+		"tsup": "^6.6.3",
+		"typescript": "^4.9.5"
+	},
+	"packageManager": "yarn@3.4.1"
 }
