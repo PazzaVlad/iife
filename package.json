@@ -5,7 +5,8 @@
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "tsup src/index.ts --dts --format cjs"
+		"build": "tsup src/index.ts --dts --format cjs",
+		"release": "yarn build && yarn npm publish"
 	},
 	"repository": {
 		"type": "git",
